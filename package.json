@@ -1,0 +1,151 @@
+{
+  "name": "redmobile",
+  "displayName": "RedMobile",
+  "version": "9.0.1",
+  "description": "Node-RED on Mobile.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cordova build"
+  },
+  "author": "okhiroyuki",
+  "license": "Apache-2.0",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-device-motion": {},
+      "cordova-plugin-device-orientation": {},
+      "cordova-plugin-dbmeter": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-device-gyroscope": {},
+      "cordova-clipboard": {},
+      "cordova-plugin-android-volume": {},
+      "cordova-plugin-battery-status": {},
+      "cordova-plugin-speechrecognition": {},
+      "cordova-plugin-vibration": {},
+      "cordova-plugin-firebase-mlvision": {
+        "MKLKIT_VERSION_TEXT_RECOGNITION": "16.1.1",
+        "MKLKIT_VERSION_BARCODE": "16.0.3",
+        "MKLKIT_VERSION_IMAGE_LABELLING": "17.0.0"
+      },
+      "@red-mobile/cordova-plugin-powermanagement": {},
+      "@red-mobile/cordova-plugin-shortcuts-android": {
+        "ANDROIDX_CORE_VERSION": "1.3.2"
+      },
+      "@red-mobile/cordova-plugin-networkinterface": {},
+      "@red-mobile/cordova-plugin-ambient-light": {},
+      "@red-mobile/cordova-plugin-proximity": {},
+      "@red-mobile/cordova-plugin-usb-serial": {},
+      "cordova-plugin-chooser": {},
+      "cordova-launch-review": {
+        "ANDROID_PLAY_SERVICES_CORE_VERSION": "1.8.0"
+      },
+      "cordova-plugin-inappbrowser": {},
+      "@red-mobile/cordova-plugin-magnetometer": {},
+      "cordova-plugin-camera-preview": {},
+      "cordova-plugin-camera": {
+        "ANDROIDX_CORE_VERSION": "1.6.+"
+      },
+      "com-darryncampbell-cordova-plugin-intent": {},
+      "@red-mobile/cordova-plugin-background-mode": {
+        "ANDROIDX_CORE_VERSION": "1.3.2"
+      },
+      "cordova-plugin-android-permissions": {},
+      "cordova-plugin-androidx": {},
+      "cordova-plugin-app-version": {},
+      "cordova-support-android-plugin": {},
+      "cordova-plugin-device": {},
+      "cordova-sqlite-storage": {},
+      "cordova-plugin-bluetoothle": {},
+      "cordova-plugin-firebasex": {
+        "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
+        "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
+        "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true",
+        "FIREBASE_FCM_AUTOINIT_ENABLED": "true",
+        "ANDROID_ICON_ACCENT": "#FF00FFFF",
+        "ANDROID_FIREBASE_PERFORMANCE_MONITORING": "false",
+        "ANDROID_PLAY_SERVICES_TAGMANAGER_VERSION": "18.0.2",
+        "ANDROID_PLAY_SERVICES_AUTH_VERSION": "20.5.0",
+        "ANDROID_FIREBASE_ANALYTICS_VERSION": "21.2.2",
+        "ANDROID_FIREBASE_MESSAGING_VERSION": "23.1.2",
+        "ANDROID_FIREBASE_CONFIG_VERSION": "21.4.0",
+        "ANDROID_FIREBASE_PERF_VERSION": "20.3.2",
+        "ANDROID_FIREBASE_AUTH_VERSION": "22.0.0",
+        "ANDROID_FIREBASE_INAPPMESSAGING_VERSION": "20.3.2",
+        "ANDROID_FIREBASE_FIRESTORE_VERSION": "24.6.0",
+        "ANDROID_FIREBASE_FUNCTIONS_VERSION": "20.3.0",
+        "ANDROID_FIREBASE_IID_VERSION": "21.1.0",
+        "ANDROID_FIREBASE_INSTALLATIONS_VERSION": "17.1.3",
+        "ANDROID_FIREBASE_CRASHLYTICS_VERSION": "18.3.7",
+        "ANDROID_FIREBASE_CRASHLYTICS_NDK_VERSION": "18.3.7",
+        "ANDROID_GSON_VERSION": "2.9.0",
+        "ANDROID_FIREBASE_PERF_GRADLE_PLUGIN_VERSION": "1.4.2",
+        "ANDROID_GRPC_OKHTTP": "1.46.0"
+      },
+      "cordova-plugin-file": {
+        "ANDROIDX_WEBKIT_VERSION": "1.4.0"
+      },
+      "cordova-plugin-purchase": {
+        "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmvwVpNRoychdomgkoPAyWffCcIi5yuY0Vku8+3xK8iCNSGiCIYTuFohOYocrJ3M/szcjN+/gEfBjL7LjhD+DqQipAPty9PV2xNii/S6wuMnw3zOpt2A0B9RXMJv9+E9N5oOcrm1IFpzZxA+wMXv8kQQPe1iKcBpUqYw2pjsh6KHc8etPatC8+HRi7p1vntVLpQH/EtDSAt7TCWmY6tCmxRU4pAPo4sbcGcRN+j0cT7Ef3r6PdTxEzaGq/EHd8rIWRpLRKSTrWJRSReT06CXe3LSh5tZ2ZXxFBs7reKHEmdhHBooiMJxdzYbnO1E8mYLlnlCFriMiUZeXnq2/zTmnewIDAQAB"
+      },
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "false"
+      },
+      "@red-mobile/cordova-plugin-barcodescanner": {
+        "ANDROIDX_LEGACY_SUPPORT_V4_VERSION": "1.0.0"
+      },
+      "@red-mobile/cordova-plugin-speech-synthesis": {},
+      "@red-mobile/cordova-plugin-nfc": {},
+      "@red-mobile/nodejs-mobile-cordova": {}
+    },
+    "platforms": []
+  },
+  "devDependencies": {
+    "@red-mobile/cordova-plugin-ambient-light": "^1.0.0",
+    "@red-mobile/cordova-plugin-background-mode": "^1.0.7",
+    "@red-mobile/cordova-plugin-barcodescanner": "^9.1.0",
+    "@red-mobile/cordova-plugin-magnetometer": "^2.1.1",
+    "@red-mobile/cordova-plugin-networkinterface": "^2.0.3",
+    "@red-mobile/cordova-plugin-nfc": "^1.2.2",
+    "@red-mobile/cordova-plugin-powermanagement": "^2.0.1",
+    "@red-mobile/cordova-plugin-proximity": "^1.2.5",
+    "@red-mobile/cordova-plugin-shortcuts-android": "^1.0.1",
+    "@red-mobile/cordova-plugin-speech-synthesis": "^0.2.0",
+    "@red-mobile/cordova-plugin-usb-serial": "^1.0.1",
+    "@red-mobile/nodejs-mobile-cordova": "^2.0.0",
+    "com-darryncampbell-cordova-plugin-intent": "^2.2.0",
+    "cordova-android": "^12.0.0",
+    "cordova-clipboard": "^1.3.0",
+    "cordova-launch-review": "^4.0.1",
+    "cordova-plugin-android-permissions": "^1.1.5",
+    "cordova-plugin-android-volume": "0.0.14",
+    "cordova-plugin-androidx": "^2.0.0",
+    "cordova-plugin-androidx-adapter": "^1.1.3",
+    "cordova-plugin-app-version": "^0.1.14",
+    "cordova-plugin-battery-status": "^2.0.3",
+    "cordova-plugin-bluetoothle": "^6.7.4",
+    "cordova-plugin-camera": "^6.0.0",
+    "cordova-plugin-camera-preview": "^0.12.3",
+    "cordova-plugin-chooser": "^1.3.2",
+    "cordova-plugin-dbmeter": "^2.1.0",
+    "cordova-plugin-device": "^2.1.0",
+    "cordova-plugin-device-gyroscope": "^0.2.2",
+    "cordova-plugin-device-motion": "^2.0.1",
+    "cordova-plugin-device-orientation": "^2.0.1",
+    "cordova-plugin-dialogs": "^2.0.2",
+    "cordova-plugin-file": "^8.0.0",
+    "cordova-plugin-firebase-mlvision": "^0.5.3",
+    "cordova-plugin-firebasex": "^16.1.0",
+    "cordova-plugin-geolocation": "^4.1.0",
+    "cordova-plugin-inappbrowser": "^5.0.0",
+    "cordova-plugin-purchase": "^13.6.0",
+    "cordova-plugin-speechrecognition": "^1.2.0",
+    "cordova-plugin-vibration": "^3.1.1",
+    "cordova-sqlite-storage": "^6.1.0",
+    "cordova-support-android-plugin": "^2.0.4",
+    "eslint": "^8.49.0",
+    "eslint-config-standard": "^17.1.0",
+    "grunt": "^1.4.0",
+    "grunt-contrib-clean": "^2.0.1",
+    "grunt-contrib-concat": "^2.1.0",
+    "grunt-contrib-copy": "^1.0.0"
+  }
+}
