@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.okhiroyuki.redmobile" version="9.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>RedMobile</name>
+    <description>
+        NodeRED on Mobile.
+    </description>
+    <author email="ok.okada.hiroyuki@gmail.com" />
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="http://app/*"/>
+    <allow-navigation href="https://app/*"/>
+    <allow-navigation href="http://localhost/*"/>
+    <allow-navigation href="https://localhost/*"/>
+    <platform name="android">
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true" />
+            <application android:requestLegacyExternalStorage="true" />
+            <application android:largeHeap="true" />
+        </edit-config>
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <queries>
+                <intent>
+                    <action android:name="android.intent.action.DIAL" />
+                    <data android:scheme="tel" />
+                </intent>
+            </queries>
+        </config-file>
+        <preference name="scheme" value="redmobile"/>
+        <preference name="hostname" value="localhost"/>
+        <preference name="AndroidLaunchMode" value="singleInstance"/>
+        <preference name="AndroidPersistentFileLocation" value="Internal" />
+        <allow-intent href="market:*" />
+        <icon density="mdpi" src="res/icon/android/mdpi/ic_red.png" />
+        <icon density="hdpi" src="res/icon/android/hdpi/ic_red.png" />
+        <icon density="xhdpi" src="res/icon/android/xhdpi/ic_red.png" />
+        <icon density="xxhdpi" src="res/icon/android/xxhdpi/ic_red.png" />
+        <icon density="xxxhdpi" src="res/icon/android/xxxhdpi/ic_red.png" />
+        <resource-file src="res/icon/android/mdpi/ic_dashboard.png" target="/app/src/main/res/drawable-mdpi/ic_dashboard.png" />
+        <resource-file src="res/icon/android/hdpi/ic_dashboard.png" target="/app/src/main/res/drawable-hdpi/ic_dashboard.png" />
+        <resource-file src="res/icon/android/xhdpi/ic_dashboard.png" target="/app/src/main/res/drawable-xhdpi/ic_dashboard.png" />
+        <resource-file src="res/icon/android/xxhdpi/ic_dashboard.png" target="/app/src/main/res/drawable-xxhdpi/ic_dashboard.png" />
+        <resource-file src="res/icon/android/xxxhdpi/ic_dashboard.png" target="/app/src/main/res/drawable-xxxhdpi/ic_dashboard.png" />
+        <!-- <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi" />
+        <splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi" />
+        <splash src="res/screen/android/splash-land-mdpi.png" density="land-mdpi" />
+        <splash src="res/screen/android/splash-land-xhdpi.png" density="land-xhdpi" />
+        <splash src="res/screen/android/splash-land-xxhdpi.png" density="land-xxhdpi" />
+        <splash src="res/screen/android/splash-land-xxxhdpi.png" density="land-xxxhdpi" />
+        <splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi" />
+        <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi" />
+        <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi" />
+        <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi" />
+        <splash src="res/screen/android/splash-port-xxhdpi.png" density="port-xxhdpi" />
+        <splash src="res/screen/android/splash-port-xxxhdpi.png" density="port-xxxhdpi" /> -->
+        <hook src="scripts/android/prepareNode.js" type="before_run" />
+        <hook src="scripts/android/gruntBuild.js" type="before_run" />
+        <hook src="scripts/android/prepareNode.js" type="before_build" />
+        <hook src="scripts/android/gruntRelease.js" type="before_build" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <preference name="AutoHideSplashScreen" value="true" />
+</widget>
