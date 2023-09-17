@@ -16,13 +16,21 @@
   },
   "lockFileMaintenance": {
     "enabled": true,
-    "automerge": false
+    "automerge": true
   },
   "automergeSchedule": ["before 2am"],
   "packageRules": [
     {
       "automerge": true,
       "matchManagers": ["pre-commit"]
+    },
+    {
+      "automerge": true,
+      "matchManagers": ["eslint", "eslint-config-standard"]
+    },
+    {
+      "automarge": true,
+      "matchManagers": ["grunt", "grunt-contrib-clean", "grunt-contrib-copy"]
     },
     {
       "automerge": false,
