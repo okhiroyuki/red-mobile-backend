@@ -1,9 +1,10 @@
-# cordova-redmobile
+# red-mobile-backend
 
 ## Prepare
 
 ```zsh
-sudo npm install -g cordova
+nodenv install
+npm i -g cordova modclean@3.0.0-beta.1
 ```
 
 ## Developments
