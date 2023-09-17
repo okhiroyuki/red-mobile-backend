@@ -162,7 +162,6 @@ www/css
 www/img
 www/*.html
 www/*.icon
-www/nodejs-project
 
 ## vscode
 .vscode/*

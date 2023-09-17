@@ -1,0 +1,4 @@
+[submodule "www/nodejs-project"]
+	path = www/nodejs-project
+	url = git@github.com:okhiroyuki/red-mobile-core.git
+  ignore = dirty

@@ -1,6 +1,7 @@
 {
   "name": "cordova-redmobile",
   "version": "9.0.1",
+  "private": true,
   "description": "Cordova source for redmobile.",
   "scripts": {
     "build": "cordova build"
