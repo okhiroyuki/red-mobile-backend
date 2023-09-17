@@ -1,13 +1,11 @@
 {
-  "name": "redmobile",
-  "displayName": "RedMobile",
+  "name": "cordova-redmobile",
   "version": "9.0.1",
-  "description": "Node-RED on Mobile.",
-  "main": "index.js",
+  "description": "Cordova source for redmobile.",
   "scripts": {
     "build": "cordova build"
   },
-  "author": "okhiroyuki",
+  "author": "Hiroyuki Okada",
   "license": "Apache-2.0",
   "cordova": {
     "plugins": {
