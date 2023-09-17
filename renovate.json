@@ -25,14 +25,6 @@
       "matchManagers": ["pre-commit"]
     },
     {
-      "automerge": true,
-      "matchManagers": ["eslint", "eslint-config-standard"]
-    },
-    {
-      "automarge": true,
-      "matchManagers": ["grunt", "grunt-contrib-clean", "grunt-contrib-copy"]
-    },
-    {
       "automerge": false,
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "stabilityDays": 3,
