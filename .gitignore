@@ -157,11 +157,9 @@ dist
 
 ## www
 dist
-www/js
-www/css
-www/img
+www/assets
 www/*.html
-www/*.icon
+www/*.ico
 
 ## vscode
 .vscode/*
