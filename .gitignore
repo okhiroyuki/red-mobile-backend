@@ -158,6 +158,9 @@ dist
 ## www
 dist
 www/assets
+www/css
+www/img
+www/js
 www/*.html
 www/*.ico
 
