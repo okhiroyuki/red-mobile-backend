@@ -1,7 +1,14 @@
 module.exports = function (grunt) {
   grunt.initConfig({
     clean: {
-      src: ["www/assets/", "www/css/", "www/img/", "www/*.html", "www/*.icon"],
+      src: [
+        "www/assets/",
+        "www/css/",
+        "www/js",
+        "www/img/",
+        "www/*.html",
+        "www/*.icon",
+      ],
     },
     copy: {
       main: {
