@@ -4,7 +4,8 @@
   "private": true,
   "description": "Cordova source for redmobile.",
   "scripts": {
-    "build": "cordova build"
+    "build": "cordova build",
+    "cordova:ci": "cordova platform rm android; cordova platform add android@latest; cordova plugin rm @red-mobile/nodejs-mobile-cordova; cordova plugin add @red-mobile/nodejs-mobile-cordova@latest"
   },
   "author": "Hiroyuki Okada",
   "license": "Apache-2.0",
