@@ -1,0 +1,62 @@
+name: Android CI
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    name: NodeJS ${{ matrix.node-version }}
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.ACCESS_TOKEN }}
+          submodules: recursive
+
+      - name: Update submodules
+        id: update
+        run: git submodule update --remote --recursive
+
+      - name: npm install on nodejs-project
+        run: |
+          cd www/nodejs-project
+          npm i --omit=dev
+
+      - name: copy google-service
+        env:
+          GOOGLE_SERVICE: ${{ secrets.GOOGLE_SERVICE_JSON }}
+        run: echo $GOOGLE_SERVICE | base64 --decode --ignore-garbage > ./google-services.json
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          distribution: "temurin"
+          java-version: "11"
+
+      - name: Environment Information
+        run: |
+          node --version
+          npm --version
+          gradle --version
+
+      - name: npm i -g
+        run: npm i -g cordova modclean@3.0.0-beta.1
+
+      - name: Cordova install and build
+        run: |
+          npm run cordova:ci
+          npm run build
