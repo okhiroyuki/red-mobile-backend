@@ -36,6 +36,9 @@ jobs:
           npm --version
           gradle --version
 
+      - name: npm i -g
+        run: npm i -g cordova modclean@3.0.0-beta.1
+
       - name: Cordova install and build
         run: |
           npm run cordova:ci
