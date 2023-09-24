@@ -29,7 +29,7 @@ jobs:
       - name: npm install on nodejs-project 
         run: |
           cd www/nodejs-project
-          npm run i --omit=dev
+          npm i --omit=dev
 
       - name: copy google-service
         env:
