@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
 
 jobs:
   build:
@@ -26,7 +26,7 @@ jobs:
         id: update
         run: git submodule update --remote --recursive
 
-      - name: npm install on nodejs-project 
+      - name: npm install on nodejs-project
         run: |
           cd www/nodejs-project
           npm i --omit=dev
@@ -44,8 +44,8 @@ jobs:
       - name: set up JDK 11
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
-          java-version: '11'
+          distribution: "temurin"
+          java-version: "11"
 
       - name: Environment Information
         run: |
