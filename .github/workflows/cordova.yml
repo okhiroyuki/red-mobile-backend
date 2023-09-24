@@ -11,7 +11,7 @@ jobs:
     name: NodeJS ${{ matrix.node-version }}
 
     runs-on: ubuntu-latest
-    
+
     strategy:
       matrix:
         node-version: [18.x, 20.x]
@@ -24,7 +24,17 @@ jobs:
 
       - name: Update submodules
         id: update
-        run: git submodule update --remote --recursive 
+        run: git submodule update --remote --recursive
+
+      - name: npm install on nodejs-project 
+        run: |
+          cd www/nodejs-project
+          npm run i --omit=dev
+
+      - name: copy google-service
+        env:
+          GOOGLE_SERVICE: ${{ secrets.GOOGLE_SERVICE_JSON }}
+        run: echo $GOOGLE_SERVICE | base64 --decode --ignore-garbage > ./google-services.json
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
