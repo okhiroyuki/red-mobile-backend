@@ -134,7 +134,7 @@
     "cordova-plugin-file": "8.0.0",
     "cordova-plugin-firebase-mlvision": "0.5.3",
     "cordova-plugin-firebasex": "16.1.0",
-    "cordova-plugin-geolocation": "4.1.0",
+    "cordova-plugin-geolocation": "5.0.0",
     "cordova-plugin-inappbrowser": "5.0.0",
     "cordova-plugin-purchase": "13.8.0",
     "cordova-plugin-speechrecognition": "1.2.0",
