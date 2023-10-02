@@ -41,9 +41,6 @@
       "cordova-plugin-inappbrowser": {},
       "@red-mobile/cordova-plugin-magnetometer": {},
       "cordova-plugin-camera-preview": {},
-      "cordova-plugin-camera": {
-        "ANDROIDX_CORE_VERSION": "1.6.+"
-      },
       "com-darryncampbell-cordova-plugin-intent": {},
       "@red-mobile/cordova-plugin-background-mode": {
         "ANDROIDX_CORE_VERSION": "1.3.2"
@@ -86,15 +83,18 @@
       "cordova-plugin-purchase": {
         "BILLING_KEY": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmvwVpNRoychdomgkoPAyWffCcIi5yuY0Vku8+3xK8iCNSGiCIYTuFohOYocrJ3M/szcjN+/gEfBjL7LjhD+DqQipAPty9PV2xNii/S6wuMnw3zOpt2A0B9RXMJv9+E9N5oOcrm1IFpzZxA+wMXv8kQQPe1iKcBpUqYw2pjsh6KHc8etPatC8+HRi7p1vntVLpQH/EtDSAt7TCWmY6tCmxRU4pAPo4sbcGcRN+j0cT7Ef3r6PdTxEzaGq/EHd8rIWRpLRKSTrWJRSReT06CXe3LSh5tZ2ZXxFBs7reKHEmdhHBooiMJxdzYbnO1E8mYLlnlCFriMiUZeXnq2/zTmnewIDAQAB"
       },
-      "cordova-plugin-geolocation": {
-        "GPS_REQUIRED": "false"
-      },
       "@red-mobile/cordova-plugin-barcodescanner": {
         "ANDROIDX_LEGACY_SUPPORT_V4_VERSION": "1.0.0"
       },
       "@red-mobile/cordova-plugin-speech-synthesis": {},
       "@red-mobile/cordova-plugin-nfc": {},
-      "@red-mobile/nodejs-mobile-cordova": {}
+      "@red-mobile/nodejs-mobile-cordova": {},
+      "cordova-plugin-camera": {
+        "ANDROIDX_CORE_VERSION": "1.6.+"
+      },
+      "cordova-plugin-geolocation": {
+        "GPS_REQUIRED": "false"
+      }
     },
     "platforms": []
   },

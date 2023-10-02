@@ -62,6 +62,7 @@
         <hook src="scripts/android/gruntBuild.js" type="before_run" />
         <hook src="scripts/android/prepareNode.js" type="before_build" />
         <hook src="scripts/android/gruntRelease.js" type="before_build" />
+        <hook src="scripts/android/stripExtraWriteExternalStoragePerm.js" type="after_prepare" />
     </platform>
     <platform name="ios">
         <allow-intent href="itms:*" />
