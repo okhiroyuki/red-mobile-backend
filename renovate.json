@@ -28,6 +28,7 @@
     },
     {
       "automerge": true,
+      "platformAutomerge": true,
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
     },
     {
