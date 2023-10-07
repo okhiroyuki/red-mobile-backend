@@ -88,13 +88,13 @@
       },
       "@red-mobile/cordova-plugin-speech-synthesis": {},
       "@red-mobile/cordova-plugin-nfc": {},
-      "@red-mobile/nodejs-mobile-cordova": {},
       "cordova-plugin-camera": {
         "ANDROIDX_CORE_VERSION": "1.6.+"
       },
       "cordova-plugin-geolocation": {
         "GPS_REQUIRED": "false"
-      }
+      },
+      "@red-mobile/nodejs-mobile-cordova": {}
     },
     "platforms": []
   },
