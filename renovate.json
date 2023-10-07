@@ -27,8 +27,12 @@
       "matchManagers": ["pre-commit"]
     },
     {
-      "automerge": false,
+      "automerge": true,
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"]
+    },
+    {
+      "automerge": false,
+      "excludePackageNames": ["cordova"]
     }
   ]
 }
