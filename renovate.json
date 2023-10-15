@@ -5,6 +5,7 @@
     ":enablePreCommit",
     ":timezone(Asia/Tokyo)"
   ],
+  "platform": "github",
   "onboarding": true,
   "prCreation": "branch",
   "prCreationBranchPrefix": "renovate/",
