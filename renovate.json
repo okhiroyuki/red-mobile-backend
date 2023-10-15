@@ -5,11 +5,6 @@
     ":enablePreCommit",
     ":timezone(Asia/Tokyo)"
   ],
-  "platform": "github",
-  "onboarding": true,
-  "prCreation": "branch",
-  "prCreationBranchPrefix": "renovate/",
-  "prTitlePrefix": "chore(deps):",
   "rangeStrategy": "pin",
   "major": {
     "automerge": false
