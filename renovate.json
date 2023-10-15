@@ -1,14 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
-    ":dependencyDashboardApproval",
+    "config:base",    
     ":enablePreCommit",
     ":timezone(Asia/Tokyo)"
   ],
+  "onboarding": true,
+  "prCreation": "branch",
+  "prCreationBranchPrefix": "renovate/",
+  "prTitlePrefix": "chore(deps):",
   "rangeStrategy": "pin",
   "major": {
-    "dependencyDashboardApproval": true
+    "automerge": false
   },
   "nodenv": {
     "enabled": true,
