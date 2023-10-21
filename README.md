@@ -5,6 +5,7 @@
 ```zsh
 nodenv install
 npm i -g cordova modclean@3.0.0-beta.1
+npm run ci
 ```
 
 ## Developments
@@ -13,7 +14,6 @@ npm i -g cordova modclean@3.0.0-beta.1
 
 ```bash
 cordova platform add android
-cordova plugin rm @red-mobile/nodejs-mobile-cordova; cordova plugin add @red-mobile/nodejs-mobile-cordova@latest
 ```
 
 ### Build Apk

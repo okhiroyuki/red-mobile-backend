@@ -13,6 +13,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
     <allow-navigation href="http://app/*"/>
     <allow-navigation href="https://app/*"/>
     <allow-navigation href="http://localhost/*"/>
@@ -35,7 +36,6 @@
         <preference name="hostname" value="localhost"/>
         <preference name="AndroidLaunchMode" value="singleInstance"/>
         <preference name="AndroidPersistentFileLocation" value="Internal" />
-        <allow-intent href="market:*" />
         <icon density="mdpi" src="res/icon/android/mdpi/ic_red.png" />
         <icon density="hdpi" src="res/icon/android/hdpi/ic_red.png" />
         <icon density="xhdpi" src="res/icon/android/xhdpi/ic_red.png" />
@@ -59,9 +59,9 @@
         <splash src="res/screen/android/splash-port-xxhdpi.png" density="port-xxhdpi" />
         <splash src="res/screen/android/splash-port-xxxhdpi.png" density="port-xxxhdpi" /> -->
         <hook src="scripts/android/prepareNode.js" type="before_run" />
-        <hook src="scripts/android/gruntBuild.js" type="before_run" />
+        <hook src="scripts/android/copyWWW.js" type="before_run" />
         <hook src="scripts/android/prepareNode.js" type="before_build" />
-        <hook src="scripts/android/gruntRelease.js" type="before_build" />
+        <hook src="scripts/android/copyWWW.js" type="before_build" />
         <hook src="scripts/android/stripExtraWriteExternalStoragePerm.js" type="after_prepare" />
     </platform>
     <platform name="ios">

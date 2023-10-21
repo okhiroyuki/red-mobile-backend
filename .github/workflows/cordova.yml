@@ -21,7 +21,7 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v3
         with:
-          node-version-file: '.node-version'
+          node-version-file: ".node-version"
 
       - name: Update submodules
         id: update
@@ -52,7 +52,10 @@ jobs:
       - name: npm i -g
         run: npm i -g cordova modclean@3.0.0-beta.1
 
+      - name: npm install
+        run: npm ci
+
       - name: Cordova install and build
         run: |
           npm run cordova:ci
-          npm run build
+          cordova build
