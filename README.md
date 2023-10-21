@@ -12,8 +12,7 @@ npm i -g cordova modclean@3.0.0-beta.1
 ### Create App
 
 ```bash
-cordova platform add android
-cordova plugin rm @red-mobile/nodejs-mobile-cordova; cordova plugin add @red-mobile/nodejs-mobile-cordova@latest
+npm run cordova:ci
 ```
 
 ### Build Apk
