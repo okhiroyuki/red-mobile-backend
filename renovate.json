@@ -28,7 +28,7 @@
     },
     {
       "automerge": false,
-      "excludePackageNames": ["cordova"]
+      "matchPackageNames": ["cordova"],
     }
   ]
 }
