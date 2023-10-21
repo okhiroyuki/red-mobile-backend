@@ -4,6 +4,7 @@
   "private": true,
   "description": "Cordova source for redmobile.",
   "scripts": {
+    "clean": "rm -rf platforms/ plugins/ node_modules/",
     "build": "cordova build",
     "cordova:ci": "cordova platform rm android; cordova platform add android@latest; cordova plugin rm @red-mobile/nodejs-mobile-cordova; cordova plugin add @red-mobile/nodejs-mobile-cordova@latest"
   },
@@ -96,7 +97,9 @@
       },
       "@red-mobile/nodejs-mobile-cordova": {}
     },
-    "platforms": []
+    "platforms": [
+      "android"
+    ]
   },
   "devDependencies": {
     "@red-mobile/cordova-plugin-ambient-light": "1.0.0",
@@ -112,7 +115,7 @@
     "@red-mobile/cordova-plugin-usb-serial": "1.0.1",
     "@red-mobile/nodejs-mobile-cordova": "3.0.0",
     "com-darryncampbell-cordova-plugin-intent": "2.2.0",
-    "cordova-android": "12.0.1",
+    "cordova-android": "^12.0.1",
     "cordova-clipboard": "1.3.0",
     "cordova-launch-review": "4.0.1",
     "cordova-plugin-android-permissions": "1.1.5",
