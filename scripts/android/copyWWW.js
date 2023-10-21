@@ -18,10 +18,18 @@ module.exports = function () {
     }
   }
 
+  async function ensureDirectoryExists(directoryPath) {
+    if (!(await fs.pathExists(directoryPath))) {
+      await fs.mkdirp(directoryPath);
+    }
+  }
+
   async function copy() {
     const currentWorkingDirectory = process.cwd();
     const source = path.resolve(currentWorkingDirectory, "dist/");
     const destination = path.resolve(currentWorkingDirectory, "www/");
+
+    await ensureDirectoryExists(source);
 
     await fs.copy(source, destination);
   }
