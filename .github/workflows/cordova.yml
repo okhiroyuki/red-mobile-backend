@@ -52,6 +52,10 @@ jobs:
       - name: npm i -g
         run: npm i -g cordova modclean@3.0.0-beta.1
 
+      - name: npm install
+        run: npm ci
+
       - name: Cordova install and build
         run: |
           npm run cordova:ci
+          cordova build

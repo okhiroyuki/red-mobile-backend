@@ -6,8 +6,7 @@
   "scripts": {
     "clean": "rimraf platforms plugins",
     "install:android": "cordova platform add android",
-    "build": "cordova build",
-    "cordova:ci": "run-s clean install:android build"
+    "cordova:ci": "run-s clean install:android"
   },
   "author": "Hiroyuki Okada",
   "license": "Apache-2.0",
