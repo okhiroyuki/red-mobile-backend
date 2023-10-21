@@ -59,9 +59,9 @@
         <splash src="res/screen/android/splash-port-xxhdpi.png" density="port-xxhdpi" />
         <splash src="res/screen/android/splash-port-xxxhdpi.png" density="port-xxxhdpi" /> -->
         <hook src="scripts/android/prepareNode.js" type="before_run" />
-        <hook src="scripts/android/gruntBuild.js" type="before_run" />
+        <hook src="scripts/android/copyWWW.js" type="before_run" />
         <hook src="scripts/android/prepareNode.js" type="before_build" />
-        <hook src="scripts/android/gruntRelease.js" type="before_build" />
+        <hook src="scripts/android/copyWWW.js" type="before_build" />
         <hook src="scripts/android/stripExtraWriteExternalStoragePerm.js" type="after_prepare" />
     </platform>
     <platform name="ios">

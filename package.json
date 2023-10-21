@@ -145,9 +145,6 @@
     "cordova-sqlite-storage": "6.1.0",
     "cordova-support-android-plugin": "2.0.4",
     "eslint": "8.52.0",
-    "eslint-config-standard": "17.1.0",
-    "grunt": "1.6.1",
-    "grunt-contrib-clean": "2.0.1",
-    "grunt-contrib-copy": "1.0.0"
+    "eslint-config-standard": "17.1.0"
   }
 }
