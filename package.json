@@ -5,8 +5,8 @@
   "description": "Cordova source for redmobile.",
   "scripts": {
     "clean": "rimraf platforms plugins",
-    "install:android": "cordova platform add android",
-    "cordova:ci": "run-s clean install:android"
+    "install:platform": "cordova platform add android",
+    "cordova:ci": "run-s clean install:platform"
   },
   "author": "Hiroyuki Okada",
   "license": "Apache-2.0",
