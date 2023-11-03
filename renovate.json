@@ -1,10 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base",
-    ":enablePreCommit",
-    ":timezone(Asia/Tokyo)"
-  ],
+  "extends": ["config:base", ":enablePreCommit", ":timezone(Asia/Tokyo)"],
   "rangeStrategy": "pin",
   "major": {
     "automerge": false
@@ -28,7 +24,7 @@
     },
     {
       "automerge": false,
-      "matchPackageNames": ["cordova"],
+      "matchPackageNames": ["cordova"]
     }
   ]
 }
