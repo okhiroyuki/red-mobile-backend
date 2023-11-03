@@ -34,7 +34,6 @@
       "@red-mobile/cordova-plugin-networkinterface": {},
       "@red-mobile/cordova-plugin-ambient-light": {},
       "@red-mobile/cordova-plugin-proximity": {},
-      "@red-mobile/cordova-plugin-usb-serial": {},
       "cordova-plugin-chooser": {},
       "cordova-launch-review": {
         "ANDROID_PLAY_SERVICES_CORE_VERSION": "1.8.0"
@@ -95,7 +94,8 @@
       "cordova-plugin-geolocation": {
         "GPS_REQUIRED": "false"
       },
-      "@red-mobile/nodejs-mobile-cordova": {}
+      "@red-mobile/nodejs-mobile-cordova": {},
+      "@red-mobile/cordova-plugin-usb-serial": {}
     },
     "platforms": [
       "android"
@@ -112,7 +112,7 @@
     "@red-mobile/cordova-plugin-proximity": "1.2.5",
     "@red-mobile/cordova-plugin-shortcuts-android": "1.0.1",
     "@red-mobile/cordova-plugin-speech-synthesis": "0.2.0",
-    "@red-mobile/cordova-plugin-usb-serial": "1.0.1",
+    "@red-mobile/cordova-plugin-usb-serial": "^2.0.0",
     "@red-mobile/nodejs-mobile-cordova": "3.1.0",
     "com-darryncampbell-cordova-plugin-intent": "2.2.0",
     "cordova-android": "12.0.1",
