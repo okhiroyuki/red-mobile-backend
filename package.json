@@ -107,7 +107,7 @@
     "@red-mobile/cordova-plugin-powermanagement": "2.0.1",
     "@red-mobile/cordova-plugin-proximity": "1.2.5",
     "@red-mobile/cordova-plugin-shortcuts-android": "1.0.1",
-    "@red-mobile/cordova-plugin-speech-recognition": "^1.3.0",
+    "@red-mobile/cordova-plugin-speech-recognition": "1.3.0",
     "@red-mobile/cordova-plugin-speech-synthesis": "0.3.0",
     "@red-mobile/cordova-plugin-usb-serial": "2.0.0",
     "@red-mobile/nodejs-mobile-cordova": "3.1.0",
