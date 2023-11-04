@@ -33,32 +33,11 @@
         <icon density="xhdpi" src="res/icon/android/xhdpi/ic_red.png" />
         <icon density="xxhdpi" src="res/icon/android/xxhdpi/ic_red.png" />
         <icon density="xxxhdpi" src="res/icon/android/xxxhdpi/ic_red.png" />
-        <resource-file src="res/icon/android/mdpi/ic_dashboard.png" target="/app/src/main/res/drawable-mdpi/ic_dashboard.png" />
-        <resource-file src="res/icon/android/hdpi/ic_dashboard.png" target="/app/src/main/res/drawable-hdpi/ic_dashboard.png" />
-        <resource-file src="res/icon/android/xhdpi/ic_dashboard.png" target="/app/src/main/res/drawable-xhdpi/ic_dashboard.png" />
-        <resource-file src="res/icon/android/xxhdpi/ic_dashboard.png" target="/app/src/main/res/drawable-xxhdpi/ic_dashboard.png" />
-        <resource-file src="res/icon/android/xxxhdpi/ic_dashboard.png" target="/app/src/main/res/drawable-xxxhdpi/ic_dashboard.png" />
-        <!-- <splash src="res/screen/android/splash-land-hdpi.png" density="land-hdpi" />
-        <splash src="res/screen/android/splash-land-ldpi.png" density="land-ldpi" />
-        <splash src="res/screen/android/splash-land-mdpi.png" density="land-mdpi" />
-        <splash src="res/screen/android/splash-land-xhdpi.png" density="land-xhdpi" />
-        <splash src="res/screen/android/splash-land-xxhdpi.png" density="land-xxhdpi" />
-        <splash src="res/screen/android/splash-land-xxxhdpi.png" density="land-xxxhdpi" />
-        <splash src="res/screen/android/splash-port-hdpi.png" density="port-hdpi" />
-        <splash src="res/screen/android/splash-port-ldpi.png" density="port-ldpi" />
-        <splash src="res/screen/android/splash-port-mdpi.png" density="port-mdpi" />
-        <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi" />
-        <splash src="res/screen/android/splash-port-xxhdpi.png" density="port-xxhdpi" />
-        <splash src="res/screen/android/splash-port-xxxhdpi.png" density="port-xxxhdpi" /> -->
         <hook src="scripts/android/prepareNode.js" type="before_run" />
         <hook src="scripts/android/copyWWW.js" type="before_run" />
         <hook src="scripts/android/prepareNode.js" type="before_build" />
         <hook src="scripts/android/copyWWW.js" type="before_build" />
         <hook src="scripts/android/stripExtraWriteExternalStoragePerm.js" type="after_prepare" />
-    </platform>
-    <platform name="ios">
-        <allow-intent href="itms:*" />
-        <allow-intent href="itms-apps:*" />
     </platform>
     <preference name="AutoHideSplashScreen" value="true" />
 </widget>
