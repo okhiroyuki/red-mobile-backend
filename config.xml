@@ -24,14 +24,6 @@
             <application android:requestLegacyExternalStorage="true" />
             <application android:largeHeap="true" />
         </edit-config>
-        <config-file target="AndroidManifest.xml" parent="/*">
-            <queries>
-                <intent>
-                    <action android:name="android.intent.action.DIAL" />
-                    <data android:scheme="tel" />
-                </intent>
-            </queries>
-        </config-file>
         <preference name="scheme" value="redmobile"/>
         <preference name="hostname" value="localhost"/>
         <preference name="AndroidLaunchMode" value="singleInstance"/>
