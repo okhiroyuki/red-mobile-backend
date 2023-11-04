@@ -22,9 +22,6 @@
       "cordova-plugin-battery-status": {},
       "cordova-plugin-vibration": {},
       "@red-mobile/cordova-plugin-powermanagement": {},
-      "@red-mobile/cordova-plugin-shortcuts-android": {
-        "ANDROIDX_CORE_VERSION": "1.3.2"
-      },
       "@red-mobile/cordova-plugin-networkinterface": {},
       "@red-mobile/cordova-plugin-ambient-light": {},
       "@red-mobile/cordova-plugin-proximity": {},
@@ -106,7 +103,6 @@
     "@red-mobile/cordova-plugin-nfc": "1.2.2",
     "@red-mobile/cordova-plugin-powermanagement": "2.0.1",
     "@red-mobile/cordova-plugin-proximity": "1.2.5",
-    "@red-mobile/cordova-plugin-shortcuts-android": "1.0.1",
     "@red-mobile/cordova-plugin-speech-recognition": "1.3.0",
     "@red-mobile/cordova-plugin-speech-synthesis": "0.4.0",
     "@red-mobile/cordova-plugin-usb-serial": "2.0.0",
