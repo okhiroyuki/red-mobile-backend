@@ -125,7 +125,7 @@
     "cordova-plugin-device-motion": "2.0.1",
     "cordova-plugin-device-orientation": "2.0.1",
     "cordova-plugin-dialogs": "2.0.2",
-    "cordova-plugin-file": "8.0.0",
+    "cordova-plugin-file": "8.0.1",
     "cordova-plugin-firebasex": "16.1.0",
     "cordova-plugin-geolocation": "5.0.0",
     "cordova-plugin-inappbrowser": "5.0.0",
