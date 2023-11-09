@@ -123,7 +123,7 @@
     "cordova-plugin-device": "2.1.0",
     "cordova-plugin-device-gyroscope": "0.2.2",
     "cordova-plugin-device-motion": "2.0.1",
-    "cordova-plugin-device-orientation": "2.0.1",
+    "cordova-plugin-device-orientation": "3.0.0",
     "cordova-plugin-dialogs": "2.0.2",
     "cordova-plugin-file": "8.0.1",
     "cordova-plugin-firebasex": "16.1.0",
