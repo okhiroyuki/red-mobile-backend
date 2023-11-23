@@ -128,7 +128,7 @@
     "cordova-plugin-file": "8.0.1",
     "cordova-plugin-firebasex": "16.1.0",
     "cordova-plugin-geolocation": "5.0.0",
-    "cordova-plugin-inappbrowser": "5.0.0",
+    "cordova-plugin-inappbrowser": "6.0.0",
     "cordova-plugin-purchase": "13.9.0",
     "cordova-plugin-vibration": "3.1.1",
     "cordova-sqlite-storage": "6.1.0",
